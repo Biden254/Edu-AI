@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EduAI Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% block content %}{% endblock %}
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+<!-- This is the base template for the EduAI dashboard. It includes the necessary HTML structure and links to CSS and JavaScript files. -->
+<!-- The content block is defined to be overridden by other templates. -->

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>EduAI – Student Dashboard</h1>
+
+    <div class="section" id="profileSection">
+        <h2>Student Profile</h2>
+        <p><strong>Name:</strong> <span id="studentName"></span></p>
+        <p><strong>Notification:</strong> <span id="notifyType"></span></p>
+    </div>
+
+    <div class="section" id="attendanceSection">
+        <h2>Attendance Progress</h2>
+        <div class="progress-bar">
+            <div id="attendanceProgress" class="progress-fill">0%</div>
+        </div>
+    </div>
+
+    <div class="section" id="engagementBox">
+        <h2>AI Engagement Feedback</h2>
+        <div id="engagementFeedback" class="feedback-box"></div>
+    </div>
+
+    <div class="section" id="scheduleBox">
+        <h2>Weekly Schedule</h2>
+        <ul id="scheduleList"></ul>
+    </div>
+</div>
+{% endblock %}
